@@ -4,26 +4,26 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
-// Datos de prueba en memoria
+
 let tasks = [
   { id: 1, title: 'Tarea inicial', description: 'Ejemplo', status: 'todo' }
 ];
 
-// Endpoint base
+
 app.get('/', (req, res) => {
-  res.send('✅ API de Gestión de Tareas funcionando correctamente');
+  res.send(' API de Gestión de Tareas funcionando correctamente');
 });
 
-// GET /tasks - listar todas las tareas
+
 app.get('/tasks', (req, res) => {
   res.json(tasks);
 });
 
-// POST /tasks - crear nueva tarea
+
 app.post('/tasks', (req, res) => {
   const { title, description } = req.body;
   if (!title || !description) {
@@ -55,7 +55,7 @@ app.put('/tasks/:id', (req, res) => {
   res.json(task);
 });
 
-// DELETE /tasks/:id - eliminar tarea
+
 app.delete('/tasks/:id', (req, res) => {
   const { id } = req.params;
   const index = tasks.findIndex(t => t.id === parseInt(id));
