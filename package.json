@@ -1,0 +1,14 @@
+{
+  "name": "gestion-tareas-api",
+  "version": "1.0.0",
+  "description": "API REST para gestionar tareas (todo, doing, done)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}

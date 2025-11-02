@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: #6200ea;
+  padding: 20px;
+  margin: 0;
+}
+
+#form {
+  margin: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #03dac5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.column {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  width: 30%;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0;
+  background: #272727;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+li button {
+  margin-left: 5px;
+}
